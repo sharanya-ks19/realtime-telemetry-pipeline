@@ -7,7 +7,7 @@ st.set_page_config(page_title="Real-Time Analytics Dashboard", layout="wide")
 st.title("🚀 Real-Time Telemetry Data Pipeline")
 
 try:
-    response = requests.get( https://dole-glare-quadrant.ngrok-free.dev -> http://localhost:8000)
+    response = requests.get("https://dole-glare-quadrant.ngrok-free.dev/latest")
     data_stream = response.json()
 except Exception:
     data_stream = []
